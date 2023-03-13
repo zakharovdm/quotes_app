@@ -1,22 +1,13 @@
-import { Link } from "react-router-dom";
+import QuoteList from "../components/quotes/QuoteList";
+
+const DUMMY_QUOTES = [
+  { id: "q1", author: "Max", text: "Learning React is fun" },
+  { id: "q2", author: "Jhon", text: "Learning React is great" },
+];
 
 const AllQuotes = () => {
-  return (
-    <section>
-      <h1>All Quotes</h1>
-      <ul>
-        <li>
-          <Link to="/quotes/q1">Quote 1</Link>
-        </li>
-        <li>
-          <Link to="/quotes/q2">Quote 2</Link>
-        </li>
-        <li>
-          <Link to="/quotes/q3">Quote 3</Link>
-        </li>
-      </ul>
-    </section>
-  );
+  return <QuoteList quotes={DUMMY_QUOTES} />
+ 
 };
 
 export default AllQuotes;
