@@ -10,7 +10,7 @@ const DetailQuote = () => {
   const params = useParams();
   const match = useRouteMatch();
 
-  const quoteID = params
+  const { quoteId } = params;
 
   const {
     sendRequest,
@@ -20,8 +20,8 @@ const DetailQuote = () => {
   } = useHttp(getSingleQuote, true);
 
   useEffect(() => {
-    sendRequest(quoteID);
-  }, [sendRequest, quoteID])
+    sendRequest(quoteId);
+  }, [sendRequest, quoteId])
 
   if (status === "pending") {
     return (
