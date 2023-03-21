@@ -1,4 +1,5 @@
-badges
+[![eslint-check](https://github.com/zakharovdm/quotes_app/actions/workflows/eslint.yml/badge.svg)](https://github.com/zakharovdm/quotes_app/actions/workflows/eslint.yml)
+[![Maintainability](https://api.codeclimate.com/v1/badges/8e0d86b9332c02f90521/maintainability)](https://codeclimate.com/github/zakharovdm/quotes_app/maintainability)
 
 # Quotes app.
 
